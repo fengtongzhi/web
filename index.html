@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活在肥宣 - 首页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="nav-left">
+            <button class="menu-toggle" id="menuToggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <h1 class="site-title">活在肥宣</h1>
+        </div>
+        <div class="nav-center">
+            <div class="search-container">
+                <input type="search" class="search-input" placeholder="搜索内容..." id="searchInput">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" title="切换主题">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Left Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link" data-route="home">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                <path d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                            </svg>
+                            首页
+                        </a>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link" data-toggle="submenu">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                            </svg>
+                            活在肥宣
+                            <svg class="submenu-arrow" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#introduction" class="nav-link" data-route="introduction">简介</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#history" class="nav-link" data-route="history">历史</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#culture" class="nav-link" data-route="culture">文化</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#yellowpages" class="nav-link" data-route="yellowpages">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                            </svg>
+                            黄页
+                        </a>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link" data-toggle="submenu">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm2.97-4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 1 1.06-1.06L6.97 11.03a.75.75 0 0 1 1.079-.02l3.992-4.99a.75.75 0 0 1 1.18.928z"/>
+                            </svg>
+                            服务
+                            <svg class="submenu-arrow" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                        <ul class="submenu">
+                            <li class="nav-item">
+                                <a href="#services-business" class="nav-link" data-route="services-business">商业服务</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services-tech" class="nav-link" data-route="services-tech">技术服务</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services-consulting" class="nav-link" data-route="services-consulting">咨询服务</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-route="contact">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                            联系我们
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content" id="mainContent">
+            <div class="content-header">
+                <h1 id="pageTitle">欢迎来到活在肥宣</h1>
+                <nav class="breadcrumb" id="breadcrumb">
+                    <a href="#home">首页</a>
+                </nav>
+            </div>
+            <article class="content-body" id="contentBody">
+                <div class="markdown-content">
+                    <h2>欢迎</h2>
+                    <p>这是一个现代化的网站，支持Markdown文档渲染和动态导航。</p>
+                    <p>请使用左侧导航菜单浏览不同的内容。</p>
+                </div>
+            </article>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar" id="rightSidebar">
+            <div class="sidebar-section">
+                <h3>页面导航</h3>
+                <div class="toc" id="tableOfContents">
+                    <ul>
+                        <li><a href="#welcome">欢迎</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h3>相关信息</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h4>最后更新</h4>
+                        <p id="lastUpdated">2024年3月</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>阅读时间</h4>
+                        <p id="readingTime">约2分钟</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
